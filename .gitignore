@@ -275,3 +275,4 @@ __pycache__/
 *.csv
 *.txt
 .~lock.file.csv#
+*.bib

@@ -1,0 +1,1 @@
+Para usar a ferramenta basta executar a dll na linha de comando passando o o caminho para o arquivo csv como primeiro parametro e o caminho do arquivo de saída(caso não seja fornecido, a saída será no diretório onde foi executado com o nome de saida.bib)
