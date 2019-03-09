@@ -27,11 +27,13 @@ Sendo:
 * [ ] Refatorar o código para suportar mais de uma fonte de pesquisa;
 * [ ] Suporte ao teste automatizado
 * [ ] Adição a compilação automática
-Veja mais nas Issues do [repositório]
+
+Veja mais nas Issues do [repositório].
 
 # Contribuição
 
 * Registre seu pedido/erro no nosso [repositório].
-* Você também pode contribuir colaborando com novos templates, reportando erros ou sugerindo atualizações. Clone o [repositório] e crie seu *Pull request*.
+* Você também pode contribuir colaborando com novos templates, reportando erros ou sugerindo atualizações. 
+  * Clone o [repositório] e crie seu *Pull request*.
 
 [repositório]: https://github.com/CBSIIFSLagarto/csvtobib
