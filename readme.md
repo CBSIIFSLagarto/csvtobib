@@ -27,6 +27,7 @@ Sendo:
 * [ ] Refatorar o código para suportar mais de uma fonte de pesquisa;
 * [ ] Suporte ao teste automatizado
 * [ ] Adição a compilação automática
+* [ ] Integrar com a [betterbib](https://github.com/nschloe/betterbib) para completar os dados ausentes no arquivo .bib
 
 Veja mais nas Issues do [repositório].
 
