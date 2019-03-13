@@ -18,5 +18,6 @@ namespace csvToBib.src
         public string typeBib { get; set; }
 
         
+        
     }
 }
