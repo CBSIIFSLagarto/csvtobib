@@ -1,6 +1,6 @@
 # Sobre o projeto
 
-Ferramenta criada para converter o resultado de uma busca realizada no [IEEExplore](http://ieeexplore.ieee.org/) e que contém mais de 100 entradas.
+Ferramenta criada para converter em .bib os resultados de buscas realizadas no [IEEExplore](http://ieeexplore.ieee.org/).
 
 ## Atenção
 A ferramenta foi criada com um exercício da disciplina de introdução ao dotnet (C#), desta forma não foram realizadas maiores implementações/validações.
