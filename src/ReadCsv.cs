@@ -21,8 +21,12 @@ namespace csvToBib.src
             using (var reader = new StreamReader(dir[0]))
             using (var csv = new CsvReader(reader))
 
-            {   csv.Configuration.RegisterClassMap<MiscMap>();   
-                var records = csv.GetRecords<Misc>();
+            {   csv.Configuration.RegisterClassMap<IEEEMap>(); 
+                csv.Configuration.BadDataFound = x =>
+                {
+                    Console.WriteLine($"Bad data: <{x.RawRecord}>");
+                };
+                var records = csv.GetRecords<IEEEfile>();
                 var recordsList = records.ToList();
                 
                 recordsList.ForEach(mapToBibEntry);
@@ -30,17 +34,16 @@ namespace csvToBib.src
             } 
         }
 
-      private void mapToBibEntry(Misc value)
+      private void mapToBibEntry(IEEEfile value)
         {
-            var x = new BibEntry();
+            var x = new Reference(value);
             
-            x.Title = value.DocumentTitle;
-            x.Key = value.Id;
-            x.Year = value.Publication_Year;
-            x.Type = "misc";
-            x.Publisher = value.Publisher;
-            x.Author = value.Authors;
-
+            // x.Title = value.DocumentTitle;
+            // x.Key = value.Id;
+            // x.Year = value.Publication_Year;
+            // x.Type= "misc";
+            // x.Publisher = value.Publisher;
+            // x.Author = value.Authors;
 
             mf.Escrever(x.ToString());
         }
